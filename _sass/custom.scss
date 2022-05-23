@@ -1,0 +1,82 @@
+
+.slide-1 {
+    background-image: url(/img/Fruit-Treat_All-Packaging.jpg);
+}
+
+.products {
+    position: relative;
+    h4 {
+        color: #fff;
+/*         font-weight: bold; */
+    }
+    ul {
+        color: #ddd;
+        position: absolute;
+        bottom: 10px;
+        margin-right: 15px;
+        padding-bottom: 10px;
+        background-color: rgba(0,0,0,0.15);
+    
+    }
+}
+
+
+
+#testimonials {
+     background: url(/img/pixels.png),linear-gradient(to top right, #000000, rgb(183, 7, 15));
+}
+
+.subs {
+    background: url(/img/pixels.png),linear-gradient(to top right, #000, #0db11a);
+   }
+
+.testimonial-image {
+    background-image: url(/images/FruitTreat-All-Products.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.map {
+    border: 4px solid #fff;
+    width: 100%;
+    height: 360px;
+}
+
+.contact-form {
+    input {
+        margin-top: 10px;
+    }
+}
+
+
+
+.footer-box {
+    img {
+        filter: grayscale(100%);
+        &:hover {
+            filter: grayscale(0%)
+        }
+    }
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.active .hero-image {
+    animation: grow 10s infinite;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+
+}

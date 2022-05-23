@@ -1,0 +1,37 @@
+<!-- Hero Section Style 2 with Carousel -->
+<section class="hero-2" id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="hero-slider">
+          <div class="slider-items owl-carousel">
+            {% for image in page.slider %}
+            <div>
+              <div class="row">
+                <div class="col-md-6">
+                  <img
+                    src="/images/{{image.img}}"
+                    class="hero-image"
+                    alt="{{image.title}}"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="hero-box">
+                    <h1 class="hero-heading">{{image.title}}</h1>
+                    <p class="hero-text">{{image.about}}</p>
+                    <a href="#contact" class="btn btn-primary scroll-link"
+                      >Buy Now!</a
+                    >
+                    <!--  <a href="" class="btn btn-default">Visit Store</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="hero-dots"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

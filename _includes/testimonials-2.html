@@ -1,0 +1,51 @@
+    <!-- Section -->
+    <section class="pt-100 pb-100" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="heading-box inverse no-center white">
+                        <h2 class="heading fadeText white">People Show Love</h2>
+                        <p class="sub-heading">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                    </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="testimonial-slider">
+                        <div class="slider-items owl-carousel">
+                           
+                           {% for review in page.reviews %}
+                            <div>
+                                <div class="testimonial-box">
+                                    <div class="testimonial-img">
+                                        <img src="/img/{{review.image}}" class="img-circle" alt="{{review.name}}">
+                                    </div>
+                                    <span class="testimonial-by white">
+                                        {{review.name}}<br /><small style="color: #ddd">{{review.about}}</small>
+                                    </span>
+                                    <div class="testimonial-body">
+                                        <p>{{review.testimonial}}</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            {% endfor %}
+                            <!-- <div>
+                                <div class="testimonial-box">
+                                    <div class="testimonial-img">
+                                        <img src="/img/customer-1.jpg" class="img-circle" alt="">
+                                    </div>
+                                    <span class="testimonial-by white">
+                                        Jonathan Andre
+                                    </span>
+                                    <div class="testimonial-body">
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts.</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>            
+                
+            </div>
+        </div>
+    </section>
