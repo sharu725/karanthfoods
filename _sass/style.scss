@@ -1317,6 +1317,9 @@ header.fixed {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
+  .header {
+    position: static;
+  }
   #backHome {
     right: 50px;
     bottom: 50px;
