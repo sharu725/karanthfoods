@@ -1,22 +1,28 @@
-    <!-- Section -->
-    <section class="pt-100 pb-80" id="products">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="heading-box">
-                        <h2>Taste extracted directly from the nature</h2>
-                        <p class="sub-heading">Healthy, Crispy, Crunchy and Tasty Treat.</p>
-                    </div>
-                </div>
-                 {% for image in page.products %}
-                   <div class="col-md-6 products rev">
-                        <div class="icon-box-1" style="background-image: url(/images/{{image.img}}); height: 360px; width:100%; background-repeat: no-repeat;background-position: center center;background-size: cover;">
-                            <h4>{{image.title}}</h4>   
-                        </div>
-                            <ul>{{image.about}}</ul>
-                    </div>
-                {% endfor %}
-
-            </div>
+<!-- Section -->
+<section class="pt-100 pb-80" id="products">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="heading-box">
+          <h2>Taste extracted directly from the nature</h2>
+          <p class="sub-heading">Healthy, Crispy, Crunchy and Tasty Treat.</p>
         </div>
-    </section>
+      </div>
+    </div>
+    <div class="row">
+      {% for image in page.products %}
+      <div class="col-12 col-md-6">
+        <div class="products rev">
+          <img src="{{image.img}}" alt="{{image.title}}" loading="lazy" />
+          <div class="meta">
+            <h4>{{image.title}}</h4>
+            <ul>
+              {{image.about}}
+            </ul>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
