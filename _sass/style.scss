@@ -553,6 +553,13 @@ label {
   text-align: justify;
 }
 
+.d-grid {
+  display: grid;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
 .lead {
   font-size: 19px;
   line-height: 1.55em;
@@ -1168,6 +1175,9 @@ header.fixed {
 
 .member-box img {
   max-width: 150px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Youtube Video */
